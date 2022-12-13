@@ -34,8 +34,8 @@ public class UsuarioController {
 
 		model.addAttribute("listaUsuarios", misUsers);
 
-		model.addAttribute("editarUsuario", new Usuario());
-		model.addAttribute("nuevoUsuario", new Usuario());
+		//model.addAttribute("editarUsuario", new Usuario());
+		//model.addAttribute("nuevoUsuario", new Usuario());
 		return "usuarios";
 	}
 

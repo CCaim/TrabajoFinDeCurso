@@ -22,7 +22,7 @@ public class Deck {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "idDeck")
+	@Column(name = "id")
 	private Integer id;
 	@Column(name = "nombre_deck")
 	private String nombre;

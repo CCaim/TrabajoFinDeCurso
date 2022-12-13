@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class Usuario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "idUsuario")
+	@Column(name = "id")
 	private Integer id;
 	
 	@Column(name = "nombre")
@@ -24,6 +24,17 @@ public class Usuario {
 	
 	@OneToMany(mappedBy= "usuario", fetch = FetchType.EAGER)
 	private Set<Deck> Decks;
+
+	public Usuario() {
+		
+	}
+
+	public Usuario(Integer id, String nombre) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		
+	}
 
 	public Integer getId() {
 		return id;
