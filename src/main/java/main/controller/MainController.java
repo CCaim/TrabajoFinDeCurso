@@ -16,8 +16,5 @@ public class MainController {
 	String homeMazos() {
 		return "mazos";
 	}
-	@GetMapping("/usuarios")
-	String homeUsuarios(){
-		return "usuarios";
-	}
+
 }

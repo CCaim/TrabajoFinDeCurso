@@ -28,7 +28,7 @@ public class Deck {
 	private String nombre;
 
 	@ManyToOne
-	@JoinColumn(name = "idUsuario", nullable = false)
+	@JoinColumn(name = "id_usuario", nullable = false)
 	@JsonIgnore
 	private Usuario usuario;
 

@@ -32,7 +32,7 @@ public class UsuarioController {
 		// ArrayList<Deck> misDecks =(ArrayList<Deck>) deckRepo.findAll();
 		ArrayList<Usuario> misUsers = (ArrayList<Usuario>) userRepo.findAll();
 
-		model.addAttribute("listarUsuario", misUsers);
+		model.addAttribute("listaUsuarios", misUsers);
 
 		model.addAttribute("editarUsuario", new Usuario());
 		model.addAttribute("nuevoUsuario", new Usuario());

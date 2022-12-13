@@ -7,7 +7,7 @@ public class Main {
 
 	public static <T> void main(String[] args) {
 		
-
+		
 		
 		SpringApplication.run(Main.class, args);
 
