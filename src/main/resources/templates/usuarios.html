@@ -41,6 +41,7 @@
 					<td>
 						<a th:attr="data-target='#modal-delete'+ ${usuario.id}" data-toggle="modal"
 							data-target="#modal-delete" class="btn btn-danger btn-sm text-white pointer">Borrar</a>
+					</td>
 					<!-- hacer funcionar el boton editar -->
 					<div class="modal fade" th:id="modal-edit+${usuario.id}">
 						<div class="modal-dialog" role="document">
@@ -78,7 +79,34 @@
 							</div>
 						</div>
 					</div>
-					</td>
+					<!-- arreglar cosa rara con el edit, termina aqui -->
+					<!-- Delete-->
+					<div class="modal fade" th:id="modal-delete+${usuario.id}">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title" id="exampleModelLabel">Eliminar</h4>
+									<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">x</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<p class="error-text">¿Estas seguro de eliminar al este usuario?
+										<strong><span th:text="${usuario.nombre}"></span></strong>
+									</p>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-secondary btn-sm" data-dismiss="modal"
+										aria-hidden="true">Cancelar</button>
+									<input type="submit" value="Editar" class="btn btn-primary float-right"></input>
+									<a th:href="@{/usuarios/delete/{id}(id=${usuario.id})}">
+										<span class="btn btn-danger btn-sm" value="delete">Eliminar</span></a>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
 				</tr>
 			</tbody>
 		</table>

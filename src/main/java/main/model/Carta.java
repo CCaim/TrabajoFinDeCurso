@@ -33,6 +33,20 @@ public class Carta {
 			@JoinColumn(name = "idDeck") })
 	@JsonIgnore
 	private Set<Deck> decks;
+	
+	public Carta() {
+		
+	}
+	
+	public Carta(int id, String nname, String nset, Set<Deck> decks) {
+		super();
+		this.id = id;
+		Nname = nname;
+		Nset = nset;
+		this.decks = decks;
+	}
+
+
 
 	public int getId() {
 		return id;
