@@ -93,7 +93,7 @@ public class DeckController {
 		return "redirect:/decks";
 	}
 	@GetMapping(value= "/{id}")
-	String idDecks(Model model, @PathVariable Integer id) {
+	String id(Model model, @PathVariable Integer id) {
 		
 		Deck deckMostrar = deckRepo.findById(id).get();
 		model.addAttribute("deckMostrar", deckMostrar);

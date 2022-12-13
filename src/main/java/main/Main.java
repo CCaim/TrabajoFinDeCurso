@@ -6,20 +6,21 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import main.crud.GenericDAO;
+import main.model.Deck;
 import main.model.Usuario;
 @SpringBootApplication
 public class Main {
 
 	public static <T> void main(String[] args) {
 		
-		Usuario user1 = new Usuario(null, "Manolo");
-		
-		GenericDAO<Usuario> genericDAOUser = new GenericDAO(Usuario.class);
-		
-		genericDAOUser.insertarRegistroJPA(user1);
-		
-		ArrayList<Usuario> user = genericDAOUser.listarRegistros("Usuario");
-		
+//		Deck deck1 = new Deck(null, "Manolo");
+//		
+//		GenericDAO<Deck> genericDAODeck = new GenericDAO(Deck.class);
+//		
+//		genericDAODeck.insertarRegistroJPA(deck1);
+//		
+//		ArrayList<Deck> user = genericDAODeck.listarRegistros("Deck");
+//		
 		
 		SpringApplication.run(Main.class, args);
 		
