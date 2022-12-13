@@ -29,8 +29,8 @@ public class Carta {
 	private String Nset;
 
 	@ManyToMany(cascade = { CascadeType.MERGE }, fetch = FetchType.EAGER)
-	@JoinTable(name = "decks_cartas", joinColumns = { @JoinColumn(name = "id") }, inverseJoinColumns = {
-			@JoinColumn(name = "id") })
+	@JoinTable(name = "decks_cartas", joinColumns = { @JoinColumn(name = "id_carta") }, inverseJoinColumns = {
+			@JoinColumn(name = "id_deck") })
 	@JsonIgnore
 	private Set<Deck> decks;
 	

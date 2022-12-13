@@ -29,12 +29,16 @@ public class Usuario {
 		
 	}
 
-	public Usuario(Integer id, String nombre) {
+	
+
+	public Usuario(Integer id, String nombre, Set<Deck> decks) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		
+		Decks = decks;
 	}
+
+
 
 	public Integer getId() {
 		return id;
