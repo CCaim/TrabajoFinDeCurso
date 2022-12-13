@@ -29,13 +29,13 @@ public class UsuarioController {
 
 	@GetMapping(value = { "", "/" })
 	String homeUsers(Model model) {
-		// ArrayList<Deck> misDecks =(ArrayList<Deck>) deckRepo.findAll();
+		 ArrayList<Deck> misDecks =(ArrayList<Deck>) deckRepo.findAll();
 		ArrayList<Usuario> misUsers = (ArrayList<Usuario>) userRepo.findAll();
 
 		model.addAttribute("listaUsuarios", misUsers);
 
-		//model.addAttribute("editarUsuario", new Usuario());
-		//model.addAttribute("nuevoUsuario", new Usuario());
+		model.addAttribute("editarUsuario", new Usuario());
+		model.addAttribute("nuevoUsuario", new Usuario());
 		return "usuarios";
 	}
 

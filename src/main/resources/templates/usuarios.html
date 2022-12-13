@@ -5,26 +5,46 @@
 </head>
 
 <body>
-<div class="container">
-	<header>
-		<div th:insert="top::top"></div>
-	</header>	
-	<h1>Nuestros Usuarios</h1>
-	<!-- Imprimir tabla de usuarios-->
-	<table class="table table-hover">
-		<thead class="tabe-dark bg-info text-white">
-			<tr>
-				<th>Id</th>
-				<th>Nombre</th>
-				<th>Editar</th>
-				<th>Borrar</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr th:if="${listaUsuarios.empty}">
-				<td colspan="2">No hay usuarios registrados</td>
-			</tr>
-		</tbody>
-	</table>	
-</div>
+	<div class="container">
+		<header>
+			<div th:insert="top::top"></div>
+		</header>
+		<h1>Nuestros Usuarios</h1>
+		<!-- Imprimir tabla de usuarios-->
+		<table class="table table-hover">
+			<thead class="tabe-dark bg-info text-white">
+				<tr>
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Editar</th>
+					<th>Borrar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:if="${listaUsuarios.empty}">
+					<td colspan="2">No hay usuarios registrados</td>
+				</tr>
+				<tr th:each="usuario:${listaUsuarios}">
+					<td>
+						<a th:href="@{/usuarios/{id}(id=${usuario.id})}" class="btn btn-primary btn-sm">
+							<span th:text="${usuario.id}"></span>
+						</a>
+					</td>
+					<td>
+						<span th:text="${usuario.nombre}"></span>
+					</td>
+					<td>
+						<a th:attr="data-target='#modal-edit'+ ${usuario.id}" data-toggle="modal"
+							data-target="#modal-edit" class="btn btn-primary btn-sm text-white pointer">Edit</a>
+
+					</td>
+					<td>
+						<a th:attr="data-target='#modal-delete'+ ${usuario.id}" data-toggle="modal"
+							data-target="#modal-delete" class="btn btn-danger btn-sm text-white pointer">Borrar</a>
+					<!-- hacer funcionar el boton editar -->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
