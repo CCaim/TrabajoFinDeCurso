@@ -13,15 +13,15 @@ public class Main {
 
 	public static <T> void main(String[] args) {
 		
-//		Deck deck1 = new Deck(null, "Manolo");
+//		Deck deck1 = new Deck(null, "Manolo", null, null);
 //		
 //		GenericDAO<Deck> genericDAODeck = new GenericDAO(Deck.class);
 //		
 //		genericDAODeck.insertarRegistroJPA(deck1);
-//		
+//	
 //		ArrayList<Deck> user = genericDAODeck.listarRegistros("Deck");
+//	
 //		
-		
 		SpringApplication.run(Main.class, args);
 		
 		
