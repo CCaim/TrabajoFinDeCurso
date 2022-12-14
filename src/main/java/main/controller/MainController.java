@@ -12,9 +12,9 @@ public class MainController {
 	}
 	
 	
-	@GetMapping("/mazos")
-	String homeMazos() {
-		return "mazos";
-	}
+//	@GetMapping("/mazos")
+//	String homeMazos() {
+//		return "mazos";
+//	}
 
 }

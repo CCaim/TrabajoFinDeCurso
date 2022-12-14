@@ -79,7 +79,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- arreglar cosa rara con el edit, termina aqui -->
+					
 					<!-- Delete-->
 					<div class="modal fade" th:id="modal-delete+${usuario.id}">
 						<div class="modal-dialog" role="document">
@@ -98,7 +98,6 @@
 								<div class="modal-footer">
 									<button class="btn btn-secondary btn-sm" data-dismiss="modal"
 										aria-hidden="true">Cancelar</button>
-									<input type="submit" value="Editar" class="btn btn-primary float-right"></input>
 									<a th:href="@{/usuarios/delete/{id}(id=${usuario.id})}">
 										<span class="btn btn-danger btn-sm" value="delete">Eliminar</span></a>
 
