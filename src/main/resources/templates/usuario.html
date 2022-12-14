@@ -38,7 +38,8 @@
 								</div>
 								<div class="card-body">
 									<span th:each="deck:${userMostrar.decks}">
-									<p><a th:text="${deck.id}" th:href="@{/deck/{id}(id=${deck.id})}" class="card-text">ID</a></p>
+										<p><a th:text="${deck.id}" th:href="@{/deck/{id}(id=${deck.id})}"
+												class="card-text">ID</a></p>
 									</span>
 								</div>
 							</div>
@@ -50,7 +51,12 @@
 		</div>
 
 	</div>
-	<div class="modal fade" id="crearMensaje">
+	<div class="col-2 float-right">
+		<div class="p5">
+			<button type="button" class="btn btn-primary float-rigth" data-toggle="modal" data-target="#crearMensaje">
+				+ </button>
+		</div>
+		<div class="modal fade" id="crearMensaje">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">

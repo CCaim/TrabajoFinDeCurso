@@ -67,7 +67,7 @@
 									<label for="texto">Seleccionar un usuario</label>
 									<select th:field="*{usuario.id}" class="form-control"
 										id="exampleFormControlSelect1">
-										<option th:each="usuario:${listaUsuarios}" th:value="${usuario.id}"
+										<option th:each="usuario:${listarUsuarios}" th:value="${usuario.id}"
 											th:text="${usuario.nombre}" value="">Selecionar Usuario</option>
 									</select>
 								</div>
