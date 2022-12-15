@@ -102,8 +102,11 @@ public class DeckController {
 		ArrayList<Usuario> misUsers = (ArrayList<Usuario>) userRepo.findAll();
 		ArrayList<Carta> misCartas = (ArrayList<Carta>) cartaRepo.findAll();
 		
+			
+		
 		model.addAttribute("listarUsuarios" ,misUsers);
 		model.addAttribute("listarCartas" ,misCartas);
+	
 		
 		return "deck";
 		

@@ -38,7 +38,7 @@
 								</div>
 								<div class="card-body">
 									<span th:each="deck:${userMostrar.decks}">
-										<p><a th:text="${deck.id}" th:href="@{/deck/{id}(id=${deck.id})}"
+										<p><a th:text="${deck.nombre}" th:href="@{/decks/{id}(id=${deck.id})}"
 												class="card-text">ID</a></p>
 									</span>
 								</div>
@@ -51,45 +51,8 @@
 		</div>
 
 	</div>
-	<div class="col-2 float-right">
-		<div class="p5">
-			<button type="button" class="btn btn-primary float-rigth" data-toggle="modal" data-target="#crearMensaje">
-				+ </button>
-		</div>
-		<div class="modal fade" id="crearMensaje">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-
-						<h4 class="modal-title" id="exampleModalLabel">Crear Usuario</h4>
-						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">x</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<p class="error-text">Introduce el nombre nuevo para el usuario:
-						</p>
-						<!-- formulario nombre a editar -->
-						<form action="#" th:action="@{/usuarios/add}" th:object="${nuevoUsuario}" method="post">
-							<div class="form-row">
-								<div class="form-group mt-1">
-									<label for="texto">Nombre</label>
-									<input type="text" th:field="*{nombre}" class="form-control" id="exampleInputEmail1"
-										placeholder="Nombre" />
-								</div>
-							</div>
-					</div>
-					<div class="modal-footer">
-						<button class="btn btn-secondary btn-sm" data-dismiss="modal"
-							aria-hidden="true">Cancelar</button>
-						<input type="submit" value="Crear" class="btn btn-primary float-right" />
-
-					</div>
-					</form>
-				</div>
-			</div>
-
-		</div>
+	
+			
 </body>
 
 </html>

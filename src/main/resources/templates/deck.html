@@ -26,13 +26,10 @@
 									</div>
 									<div class="card-body">
 										<div class="mb-2">
-											<label for="texto">Seleccionar usuario</label>
-											<select th:field="*{usuario.id}" class="form-control"
-												id="exampleFormControlSelect1">
-												<option th:each="usuario:${listausuarios}" th:value="${usuario.id}"
-													th:selected="selected" th:text="${usuario.nombre}" value="">
-													Selecionar usuarios</option>
-											</select>
+											<label for="texto">Nombre del usuario</label>
+											<label th:text="*{usuario.nombre}" class="form-control">
+
+											</label>
 										</div>
 
 									</div>
@@ -40,22 +37,35 @@
 							</div>
 							<div class="col-5">
 								<div class="card">
-									<div class="card-header text-dark bg-light">Bocadillos:
+									<div class="card-header text-dark bg-light">Cartas:
 									</div>
 									<div class="card-body">
-										<label for="texto">Seleccionar bocadillos</label>
-										<select th:field="*{bocadillos}" multiple="multiple"
-											class="form-control selectpicker" name="bocadillos" id="bocadillos">
-											<option th:selected="selected" th:each="b:${listaBocadillos}"
-												th:value="${b.id}" th:text="${b.nombre}" value="">Selecionar Bocadillo
-											</option>
-										</select>
+										<label for="texto">DeckList</label>
+										<table class="table table-hover">
+											<thead class="tabe-dark bg-info text-white">
+												<tr>
+													<th>Nombre carta</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr th:if="${listarDecks.empty}">
+													<td colspan="2">Este usuario no ha creado ningun mazo</td>
+												</tr>
+												<tr>
+
+													<td>
+														<span th:text="${carta.nname}"></span>
+													</td>
+
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
 						</div>
 						<p><a th:href="@{/decks}" class="btn btn-primary m-3">Cerrar</a></p>
-						<input type="submit" value="Guardar deck" class="btn btn-primary m-3">
+
 
 					</form>
 				</div>

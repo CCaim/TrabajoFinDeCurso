@@ -28,7 +28,7 @@
 				<tr th:each="deck:${listarDecks}">
 					<td>
 						<a th:href="@{/decks/{id}(id=${deck.id})}" class="btn btn-primary btn-sm">
-							<span th:text="${deck.id}"></span>
+							<span th:text="${deck.getId()}"></span>
 						</a>
 					</td>
 					<td>
