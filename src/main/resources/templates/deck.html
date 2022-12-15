@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<div th:insert="librerias::librerias"></div>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<header>
+			<div th:insert="top::top"></div>
+		</header>
+		<div class=row pl-5 pr-5>
+			<div class="col-9">
+				<h5>Lista del deck</h5>
+				<div class="card border border primary" th:object="${deckMostrar}">
+					<form action="#" th:action="@{/decks/edit/{id}(id=${deckMostrar.id})}" th:object="${deckMostrar}"
+						method="post">
+						<div class="card-body row pt-4 pb-4">
+							<div class="col-7">
+								<div class="card">
+									<div class="card-header text-dark bg-light">Id del deck
+
+									</div>
+									<div class="card-body">
+										<div class="mb-2">
+											<label for="texto">Seleccionar usuario</label>
+											<select th:field="*{usuario.id}" class="form-control"
+												id="exampleFormControlSelect1">
+												<option th:each="usuario:${listausuarios}" th:value="${usuario.id}"
+													th:selected="selected" th:text="${usuario.nombre}" value="">
+													Selecionar usuarios</option>
+											</select>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-5">
+								<div class="card">
+									<div class="card-header text-dark bg-light">Bocadillos:
+									</div>
+									<div class="card-body">
+										<label for="texto">Seleccionar bocadillos</label>
+										<select th:field="*{bocadillos}" multiple="multiple"
+											class="form-control selectpicker" name="bocadillos" id="bocadillos">
+											<option th:selected="selected" th:each="b:${listaBocadillos}"
+												th:value="${b.id}" th:text="${b.nombre}" value="">Selecionar Bocadillo
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p><a th:href="@{/decks}" class="btn btn-primary m-3">Cerrar</a></p>
+						<input type="submit" value="Guardar deck" class="btn btn-primary m-3">
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

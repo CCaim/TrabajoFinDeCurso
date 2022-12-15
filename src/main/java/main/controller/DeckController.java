@@ -105,7 +105,7 @@ public class DeckController {
 		model.addAttribute("listarUsuarios" ,misUsers);
 		model.addAttribute("listarCartas" ,misCartas);
 		
-		return "decks";
+		return "deck";
 		
 	}
 }

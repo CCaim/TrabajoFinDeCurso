@@ -15,6 +15,7 @@
 				<tr>
 					<th>Id</th>
 					<th>Nombre usuario</th>
+					<th>Nombre del deck</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -32,6 +33,9 @@
 					</td>
 					<td>
 						<span th:text="${deck.getUsuario().getNombre()}"></span>
+					</td>
+					<td>
+						<span th:text="${deck.getNombre()}"></span>
 					</td>
 					<div class="modal fade" id="crearMensaje">
 						<div class="modal-dialog" role="document">

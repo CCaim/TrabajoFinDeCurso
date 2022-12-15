@@ -68,7 +68,7 @@ public class UsuarioController {
 		Usuario userMostrar = userRepo.findById(id).get();
 		model.addAttribute("userMostrar", userMostrar);
 		
-		return "usuarios";
+		return "usuario";
 	}
 	
 }
