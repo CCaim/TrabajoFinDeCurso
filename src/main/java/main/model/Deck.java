@@ -36,7 +36,7 @@ public class Deck {
 	private Set<Carta> cartas;
 
 	public Deck() {
-		
+		cartas = new HashSet<Carta>();
 	}
 
 	public Deck(Integer id, String nombre, Usuario usuario, Set<Carta> cartas) {

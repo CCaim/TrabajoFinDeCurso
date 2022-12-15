@@ -31,8 +31,63 @@
 						</a>
 					</td>
 					<td>
-						<span th:text="${decks.usuarios.nombre}"></span>
+						<span th:text="${deck.getUsuario().getNombre()}"></span>
 					</td>
+					<div class="modal fade" id="crearMensaje">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+
+									<h4 class="modal-title" id="exampleModalLabel">Crear Deck</h4>
+									<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">x</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<p class="error-text">Crear nuevo deck:
+									</p>
+
+									<form action="#" th:action="@{/decks/add}" th:object="${deckNuevo}" method="post">
+										<p class="error-text">Introduce el nombre del deck:
+											<input type="text" th:field="*{nombre}" class="form-control"
+												id="exampleInputEmail1"
+												th:attr="placeholder=${deck.getNombre()}"></input>
+										</p>
+										<div class="form-row">
+											<div class="form-group mt-4">
+												<label for="texto">Seleccionar un usuario</label>
+												<select th:field="*{usuario.id}" class="form-control"
+													id="exampleFormControlSelect1">
+													<option th:each="usuario:${listarUsuarios}" th:value="${usuario.id}"
+														th:text="${usuario.nombre}" value="">Selecionar Usuario</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-row">
+											<div class="form-group mt-4">
+												<label for="texto">Seleccionar las cartas</label>
+												<select th:field="*{cartas}" multiple="multiple"
+													class="form-control selectpicker" name="cartas" id="cartas">
+													<option th:each="c:${listarCartas}" th:value="${c.id}"
+														th:text="${c.nname}" value="">Selecionar Cartas</option>
+												</select>
+											</div>
+										</div>
+
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-secondary btn-sm" data-dismiss="modal"
+										aria-hidden="true">Cancelar</button>
+									<input type="submit" value="Crear Deck" class="btn btn-primary float-right" />
+
+								</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+
 				</tr>
 			</tbody>
 		</table>
@@ -46,56 +101,7 @@
 
 		<!-- Create modal -->
 
-		<div class="modal fade" id="crearMensaje">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
 
-						<h4 class="modal-title" id="exampleModalLabel">Crear Deck</h4>
-						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">x</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<p class="error-text">Crear nuevo deck:
-						</p>
-
-						<form action="#" th:action="@{/decks/add}" th:object="${deckNuevo}" method="post">
-
-							<div class="form-row">
-								<div class="form-group mt-4">
-									<label for="texto">Seleccionar un usuario</label>
-									<select th:field="*{usuario.id}" class="form-control"
-										id="exampleFormControlSelect1">
-										<option th:each="usuario:${listarUsuarios}" th:value="${usuario.id}"
-											th:text="${usuario.nombre}" value="">Selecionar Usuario</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-row">
-								<div class="form-group mt-4">
-									<label for="texto">Seleccionar las cartas</label>
-									<select th:field="*{cartas}" multiple="multiple" class="form-control selectpicker"
-										name="cartas" id="cartas">
-										<option th:each="c:${listarCartas}" th:value="${c.id}" th:text="${c.nname}"
-											value="">Selecionar Cartas</option>
-									</select>
-								</div>
-							</div>
-
-					</div>
-					<div class="modal-footer">
-						<button class="btn btn-secondary btn-sm" data-dismiss="modal"
-							aria-hidden="true">Cancelar</button>
-						<input type="submit" value="Crear Deck" class="btn btn-primary float-right" />
-
-					</div>
-					</form>
-				</div>
-			</div>
-
-		</div>
 		<!-- Fin create modal -->
 
 	</div>
