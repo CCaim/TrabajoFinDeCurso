@@ -43,21 +43,15 @@
 										<label for="texto">DeckList</label>
 										<table class="table table-hover">
 											<thead class="tabe-dark bg-info text-white">
-												<tr>
-													<th>Nombre carta</th>
-												</tr>
 											</thead>
 											<tbody>
-												<tr th:if="${listarDecks.empty}">
-													<td colspan="2">Este usuario no ha creado ningun mazo</td>
-												</tr>
-												<tr>
-
-													<td>
-														<span th:text="${carta.nname}"></span>
-													</td>
-
-												</tr>
+												<div class="card-body">
+													<span th:each="carta:${deckMostrar.cartas}">
+															<span><span
+																	th:text="${carta.nname}"></span></span>
+														</p>
+													</span>
+												</div>
 											</tbody>
 										</table>
 									</div>
