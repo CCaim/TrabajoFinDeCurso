@@ -77,7 +77,7 @@ public class DeckController {
 		deckRepo.deleteById(id);
 		return "redirect:/decks";
 	}
-	@PostMapping("/add")
+	@PostMapping("/addncard")
 	public String editarDeck(@ModelAttribute("deckNuevo") Deck deckNew, BindingResult bindingresult) {
 		
 		Usuario newUser = userRepo.findById(deckNew.getUsuario().getId()).get();
@@ -90,7 +90,7 @@ public class DeckController {
 		}
 		deckRepo.save(deckNew);
 		
-		return "redirect:/decks";
+		return "redirect:/deck";
 	}
 	@GetMapping(value= "/{id}")
 	String id(Model model, @PathVariable Integer id) {

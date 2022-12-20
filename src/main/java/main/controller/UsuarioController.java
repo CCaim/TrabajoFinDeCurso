@@ -33,7 +33,7 @@ public class UsuarioController {
 		ArrayList<Usuario> misUsers = (ArrayList<Usuario>) userRepo.findAll();
 
 		model.addAttribute("listaUsuarios", misUsers);
-
+		
 		model.addAttribute("editarUsuario", new Usuario());
 		model.addAttribute("nuevoUsuario", new Usuario());
 		return "usuarios";
@@ -51,6 +51,12 @@ public class UsuarioController {
 	}
 	@GetMapping("/delete/{id}")
 	String borrarUsuario(Model model, @PathVariable Integer id) {
+		Usuario userAborrar= userRepo.findById(id).get();
+		
+		for(Deck d:userAborrar.getDecks()) {
+			deckRepo.delete(d);
+		}
+		
 		userRepo.deleteById(id);
 		
 		return "redirect:/usuarios";
