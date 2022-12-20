@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import main.crud.CartaRepo;
 import main.crud.DeckRepo;
-import main.crud.UserRepo;
+import main.crud.UsuarioRepo;
 import main.model.Carta;
 import main.model.Deck;
 import main.model.Usuario;
@@ -27,7 +27,7 @@ public class DeckController {
 	private DeckRepo deckRepo;
 
 	@Autowired
-	private UserRepo userRepo;
+	private UsuarioRepo userRepo;
 
 	@Autowired
 	private CartaRepo cartaRepo;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import main.crud.DeckRepo;
-import main.crud.UserRepo;
+import main.crud.UsuarioRepo;
 import main.model.Deck;
 import main.model.Usuario;
 
@@ -25,7 +25,7 @@ public class UsuarioController {
 	private DeckRepo deckRepo;
 
 	@Autowired
-	private UserRepo userRepo;
+	private UsuarioRepo userRepo;
 
 	@GetMapping(value = { "", "/" })
 	String homeUsers(Model model) {
