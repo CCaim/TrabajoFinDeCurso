@@ -1,31 +1,135 @@
-2022-12-20 13:33:58.501  INFO 6756 --- [main] main.Main                                : Starting Main using Java 17.0.4.1 on DESKTOP-435I1FT with PID 6756 (E:\SpringWorkspace\Trabajo_Fin_de_Grado\target\classes started by PC in E:\SpringWorkspace\Trabajo_Fin_de_Grado)
-2022-12-20 13:33:58.510  INFO 6756 --- [main] main.Main                                : No active profile set, falling back to 1 default profile: "default"
-2022-12-20 13:33:59.262  INFO 6756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-20 13:33:59.323  INFO 6756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
-2022-12-20 13:33:59.912  INFO 6756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
-2022-12-20 13:33:59.924  INFO 6756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-12-20 13:33:59.925  INFO 6756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-12-20 13:34:00.094  INFO 6756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-12-20 13:34:00.094  INFO 6756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1519 ms
-2022-12-20 13:34:00.338  INFO 6756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-12-20 13:34:00.530  INFO 6756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-12-20 13:34:00.613  INFO 6756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-20 13:34:00.694  INFO 6756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-12-20 13:34:00.918  INFO 6756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-12-20 13:34:01.066  INFO 6756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2022-12-20 13:34:01.746  INFO 6756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-20 13:34:01.755  INFO 6756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-20 13:34:02.051  WARN 6756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-20 13:34:02.184  INFO 6756 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-12-20 13:34:02.412  WARN 6756 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-12-26 18:46:42.936  INFO 1188 --- [main] main.Main                                : Starting Main using Java 17.0.4.1 on DESKTOP-435I1FT with PID 1188 (E:\SpringWorkspace\Trabajo_Fin_de_Grado\target\classes started by PC in E:\SpringWorkspace\Trabajo_Fin_de_Grado)
+2022-12-26 18:46:43.310  INFO 1188 --- [main] main.Main                                : No active profile set, falling back to 1 default profile: "default"
+2022-12-26 18:46:44.699  INFO 1188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 18:46:44.784  INFO 1188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2022-12-26 18:46:45.531  INFO 1188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-26 18:46:45.552  INFO 1188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-26 18:46:45.559  INFO 1188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-26 18:46:45.740  INFO 1188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 18:46:45.747  INFO 1188 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2371 ms
+2022-12-26 18:46:45.974  INFO 1188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-26 18:46:46.199  INFO 1188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-26 18:46:46.352  INFO 1188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 18:46:46.481  INFO 1188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-26 18:46:46.830  INFO 1188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-26 18:46:48.379  INFO 1188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-12-26 18:46:49.400  INFO 1188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-26 18:46:49.435  INFO 1188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 18:46:50.033  WARN 1188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-26 18:46:50.231  INFO 1188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-12-26 18:46:50.530  WARN 1188 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: a043d9d8-8687-43e6-9f35-913b05f1ae03
+Using generated security password: 655fe474-e160-4207-8659-236b8a83d1ba
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2022-12-20 13:34:02.529  INFO 6756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bed0ff4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17a5ae7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f5a092e, org.springframework.security.web.header.HeaderWriterFilter@5bc40f5d, org.springframework.security.web.csrf.CsrfFilter@18ffc008, org.springframework.security.web.authentication.logout.LogoutFilter@572db5ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5507584d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67b20b4c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e4dddee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7e764e5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70940cb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47fce2c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@183a84f4, org.springframework.security.web.session.SessionManagementFilter@5b2c41f9, org.springframework.security.web.access.ExceptionTranslationFilter@205b73d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c931728]
-2022-12-20 13:34:02.605  INFO 6756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
-2022-12-20 13:34:02.615  INFO 6756 --- [main] main.Main                                : Started Main in 4.553 seconds (JVM running for 14.841)
-2022-12-20 13:34:14.900  INFO 6756 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-12-20 13:34:14.901  INFO 6756 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-12-20 13:34:14.903  INFO 6756 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-26 18:46:50.695  INFO 1188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f370472, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50d91a0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e69bf78, org.springframework.security.web.header.HeaderWriterFilter@3f22ce2a, org.springframework.security.web.csrf.CsrfFilter@13346a64, org.springframework.security.web.authentication.logout.LogoutFilter@3f267e1b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29693b1d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@15a6a91f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ace65df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b808427, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f69d246, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bfdc92b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52b6561b, org.springframework.security.web.session.SessionManagementFilter@6e069ca9, org.springframework.security.web.access.ExceptionTranslationFilter@3f12676, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dbf3bc]
+2022-12-26 18:46:50.803  INFO 1188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8095 (http) with context path ''
+2022-12-26 18:46:50.816  INFO 1188 --- [main] main.Main                                : Started Main in 8.563 seconds (JVM running for 9.77)
+2022-12-26 18:47:10.339  INFO 1188 --- [http-nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 18:47:10.354  INFO 1188 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-26 18:47:10.358  INFO 1188 --- [http-nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-12-26 18:48:37.141  INFO 1188 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-26 18:48:37.194  INFO 1188 --- [RMI TCP Connection(5)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-26 18:48:37.200  INFO 1188 --- [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-26 18:48:37.276  INFO 1188 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-26 18:48:37.281  INFO 1188 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-26 18:48:37.316  INFO 1188 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-26 18:49:22.002  INFO 17880 --- [main] main.Main                                : Starting Main using Java 17.0.4.1 on DESKTOP-435I1FT with PID 17880 (E:\SpringWorkspace\Trabajo_Fin_de_Grado\target\classes started by PC in E:\SpringWorkspace\Trabajo_Fin_de_Grado)
+2022-12-26 18:49:22.006  INFO 17880 --- [main] main.Main                                : No active profile set, falling back to 1 default profile: "default"
+2022-12-26 18:49:22.773  INFO 17880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-26 18:49:22.860  INFO 17880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
+2022-12-26 18:49:23.581  INFO 17880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8095 (http)
+2022-12-26 18:49:23.598  INFO 17880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-26 18:49:23.600  INFO 17880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-26 18:49:23.773  INFO 17880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-26 18:49:23.775  INFO 17880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2022-12-26 18:49:24.002  INFO 17880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-26 18:49:24.232  INFO 17880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-26 18:49:24.339  INFO 17880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-26 18:49:24.456  INFO 17880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-26 18:49:24.693  INFO 17880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-26 18:49:24.935  INFO 17880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-12-26 18:49:25.150  WARN 17880 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is java.lang.TypeNotPresentException: Type GrantedAuthority not present
+2022-12-26 18:49:25.152  INFO 17880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-26 18:49:25.222  INFO 17880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-26 18:49:25.227  INFO 17880 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-26 18:49:25.243  INFO 17880 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 18:49:25.278 ERROR 17880 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is java.lang.TypeNotPresentException: Type GrantedAuthority not present
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at main.Main.main(Main.java:33) ~[classes/:na]
+Caused by: java.lang.TypeNotPresentException: Type GrantedAuthority not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator.reifyBounds(LazyReflectiveObjectGenerator.java:65) ~[na:na]
+	at java.base/sun.reflect.generics.reflectiveObjects.WildcardTypeImpl.getUpperBounds(WildcardTypeImpl.java:105) ~[na:na]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeUtils$1.caseWildcardType(TypeUtils.java:51) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeUtils$1.caseWildcardType(TypeUtils.java:22) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeSwitch.doSwitch(TypeSwitch.java:37) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeUtils.isResolved(TypeUtils.java:53) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeUtils$1.caseParameterizedType(TypeUtils.java:37) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeUtils$1.caseParameterizedType(TypeUtils.java:22) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeSwitch.doSwitch(TypeSwitch.java:31) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeUtils.isResolved(TypeUtils.java:53) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.ApproximatingTypeEnvironment$1.caseParameterizedType(ApproximatingTypeEnvironment.java:82) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.ApproximatingTypeEnvironment$1.caseParameterizedType(ApproximatingTypeEnvironment.java:55) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.TypeSwitch.doSwitch(TypeSwitch.java:31) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.ApproximatingTypeEnvironment.fineApproximation(ApproximatingTypeEnvironment.java:107) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.generics.ApproximatingTypeEnvironment.bind(ApproximatingTypeEnvironment.java:49) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.toXType(JavaReflectionManager.java:213) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaXProperty.create(JavaXProperty.java:27) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.javaXPropertyConstruction(JavaReflectionManager.java:100) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.TypeEnvironmentMap$ContextScope.buildObject(TypeEnvironmentMap.java:73) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220) ~[na:na]
+	at org.hibernate.annotations.common.reflection.java.TypeEnvironmentMap$ContextScope.getOrCompute(TypeEnvironmentMap.java:69) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.TypeEnvironmentMap$ContextScope.access$000(TypeEnvironmentMap.java:58) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.TypeEnvironmentMap.getOrCompute(TypeEnvironmentMap.java:45) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaReflectionManager.getXProperty(JavaReflectionManager.java:186) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredMethodProperties(JavaXClass.java:100) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:116) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.annotations.common.reflection.java.JavaXClass.getDeclaredProperties(JavaXClass.java:108) ~[hibernate-commons-annotations-5.1.2.Final.jar:5.1.2.Final]
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:252) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 16 common frames omitted
+Caused by: java.lang.ClassNotFoundException: GrantedAuthority
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 60 common frames omitted
+

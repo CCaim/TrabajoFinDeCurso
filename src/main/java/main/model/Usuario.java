@@ -31,13 +31,13 @@ public class Usuario implements UserDetails{
 	@Column(name = "id")
 	private Integer id;
 
-	@Column(name = "nombre", unique = true)
+	@Column(name = "nombre")
 	private String nombre;
 
 	@OneToMany(mappedBy = "usuario", fetch = FetchType.EAGER)
 	private Set<Deck> Decks;
 
-	@Column(name = "username")
+	@Column(name = "username", unique = true)
 	private String username;
 
 	@Column(name = "password")
