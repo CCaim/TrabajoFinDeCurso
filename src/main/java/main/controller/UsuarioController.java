@@ -16,11 +16,15 @@ import main.crud.DeckRepo;
 import main.crud.UsuarioRepo;
 import main.model.Deck;
 import main.model.Usuario;
+import main.servicio.impl.UsuarioServiceImplements;
 
 @RequestMapping("/usuarios")
 @Controller
 public class UsuarioController {
-
+	
+	@Autowired
+	UsuarioServiceImplements userDetailsService;
+	
 	@Autowired
 	private DeckRepo deckRepo;
 
@@ -31,7 +35,7 @@ public class UsuarioController {
 	String homeUsers(Model model) {
 		 ArrayList<Deck> misDecks =(ArrayList<Deck>) deckRepo.findAll();
 		ArrayList<Usuario> misUsers = (ArrayList<Usuario>) userRepo.findAll();
-
+		
 		model.addAttribute("listaUsuarios", misUsers);
 		
 		model.addAttribute("editarUsuario", new Usuario());

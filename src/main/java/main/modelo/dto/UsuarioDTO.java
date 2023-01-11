@@ -2,7 +2,9 @@ package main.modelo.dto;
 
 import javax.persistence.Column;
 
-public class usuarioDTO {
+public class UsuarioDTO {
+	
+	private String nombre;
 	
 	private String username;
 
@@ -24,9 +26,18 @@ public class usuarioDTO {
 		this.password = password;
 	}
 
-	public usuarioDTO(String username, String password) {
+	public UsuarioDTO(String username, String password, String nombre) {
+		this.nombre = nombre;
 		this.username = username;
 		this.password = password;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 	
 	
