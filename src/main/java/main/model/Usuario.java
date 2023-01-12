@@ -48,8 +48,10 @@ public class Usuario implements UserDetails{
 			@JoinColumn(name = "id_rol") })
 	@JsonIgnore
 	private Set<Rol> roles;
-
 	public Usuario() {
+		
+	}
+	public Usuario(String string, String string2, String string3) {
 
 	}
 

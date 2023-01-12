@@ -29,6 +29,9 @@ public class Rol {
 	public Rol() {
 		
 	}
+	public Rol(String string) {
+		
+	}
 	public Rol(Integer id, String nombre, Set<Usuario> usuarios) {
 		super();
 		this.id = id;
