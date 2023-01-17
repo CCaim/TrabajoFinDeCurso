@@ -53,6 +53,7 @@ public class UsuarioServiceImplements implements UsuarioService {
 				passwordEncoder.encode(userDTO.getPassword()));
 
 		nuevoUsuario.getRoles().add(new Rol("ROL_ADMIN"));
+		usuarioRepo.save(nuevoUsuario);
 		return null;
 	}
 

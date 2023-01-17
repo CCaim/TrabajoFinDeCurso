@@ -16,6 +16,7 @@ import main.crud.DeckRepo;
 import main.crud.UsuarioRepo;
 import main.model.Deck;
 import main.model.Usuario;
+import main.modelo.dto.UsuarioDTO;
 import main.servicio.impl.UsuarioServiceImplements;
 
 @RequestMapping("/usuarios")
@@ -80,5 +81,19 @@ public class UsuarioController {
 		
 		return "usuario";
 	}
-	
+	@GetMapping("/registro")
+    public String mostrarRegistro(Model model, @ModelAttribute("usuarioNuevo") UsuarioDTO usuarioNew, BindingResult bindingresult) {
+
+        model.addAttribute("newUserDTO", new UsuarioDTO());
+
+        return "registro";
+    }
+
+    @PostMapping("/addRegistro")
+    public String addRegistro(@ModelAttribute("usuarioNuevo") UsuarioDTO usuarioNew, BindingResult bindingresult) {
+
+        userDetailsService.insertarUsuarioDTO(usuarioNew);
+
+        return "login";
+    }
 }

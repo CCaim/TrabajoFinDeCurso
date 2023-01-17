@@ -1,5 +1,6 @@
 package main.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -33,7 +34,6 @@ public class Rol {
 		
 	}
 	public Rol(Integer id, String nombre, Set<Usuario> usuarios) {
-		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.usuarios = usuarios;

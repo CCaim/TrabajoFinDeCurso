@@ -1,6 +1,7 @@
 package main.model;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -49,17 +50,22 @@ public class Usuario implements UserDetails{
 	@JsonIgnore
 	private Set<Rol> roles;
 	public Usuario() {
-		
+		roles = new HashSet<Rol>();
 	}
-	public Usuario(String string, String string2, String string3) {
-
+	public Usuario(String nombre, String username, String password) {
+		this.nombre = nombre;
+		this.username = username;
+		this.password = password;
+		roles = new HashSet<Rol>();
 	}
 
-	public Usuario(Integer id, String nombre, Set<Deck> decks) {
-		super();
+	public Usuario(Integer id, String nombre, Set<Deck> decks, String username, String password) {
 		this.id = id;
 		this.nombre = nombre;
+		this.username = username;
+		this.password = password;
 		Decks = decks;
+		roles = new HashSet<Rol>();
 	}
 
 	public Integer getId() {

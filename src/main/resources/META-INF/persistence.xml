@@ -12,7 +12,10 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 
- 			 <class>modelo.Carta</class>
+ 			 <class>model.Carta</class>
+ 			 <class>model.Deck</class>
+ 			 <class>model.Usuario</class>
+ 			 <class>model.Rol</class>
 
              
              
