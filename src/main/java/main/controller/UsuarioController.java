@@ -3,6 +3,8 @@ package main.controller;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import main.crud.DeckRepo;
 import main.crud.UsuarioRepo;
 import main.model.Deck;
+import main.model.Rol;
 import main.model.Usuario;
 import main.modelo.dto.UsuarioDTO;
 import main.servicio.impl.UsuarioServiceImplements;
@@ -67,7 +70,7 @@ public class UsuarioController {
 		return "redirect:/usuarios";
 	}
 	@PostMapping("/add")
-	public String editarUsuario(@ModelAttribute("usuaroNuevo") Usuario userNew, BindingResult bindingResult) {
+	public String editarUsuario(@ModelAttribute("usuarioNuevo") Usuario userNew, BindingResult bindingResult) {
 		
 		userRepo.save(userNew);
 		
@@ -95,5 +98,25 @@ public class UsuarioController {
         userDetailsService.insertarUsuarioDTO(usuarioNew);
 
         return "login";
+    }
+    private boolean elUsuarioLogueadoesAdmin() {
+    	Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+    	UserDetails userDetails = null;
+    	
+    	if (principal instanceof UserDetails) {
+    		
+    		userDetails =(UserDetails) principal;
+    		
+    		Usuario u = userDetailsService.obtenerUsuarioPorNombre(userDetails.getUsername());
+    		
+    		for (Rol r: u.getRoles()) {
+    			
+    			if(r.getNombre().compareTo("ROLE_ADMIN") == 0) {
+    				return true;
+    			}
+    			
+    		}
+    	}
+    	return false;
     }
 }

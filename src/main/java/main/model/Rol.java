@@ -31,7 +31,7 @@ public class Rol {
 		
 	}
 	public Rol(String string) {
-		
+		this.nombre = string;
 	}
 	public Rol(Integer id, String nombre, Set<Usuario> usuarios) {
 		this.id = id;

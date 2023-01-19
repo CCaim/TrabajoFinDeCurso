@@ -15,7 +15,7 @@ public interface UsuarioService extends UserDetailsService{
 	
 	public Usuario insertarUsuario (Usuario user);
 	
-	public UsuarioDTO insertarUsuarioDTO (UsuarioDTO userDTO);
+	public void insertarUsuarioDTO (UsuarioDTO userDTO);
 
 	public List<Usuario> listarUsuario();
 	
